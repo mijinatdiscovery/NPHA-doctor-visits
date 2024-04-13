@@ -5,7 +5,7 @@ Last updated: April 2024
 
 ## Model Details
 
-This model was designed for learning purpose to classify patients into three categories based on the number of doctors they have visited: 0-1 doctors, 2-3 doctors, and 4 or more doctors.
+This model was designed to classify patients into three categories based on the number of doctors they have visited: 0-1 doctors, 2-3 doctors, and 4 or more doctors.
 
 ### Model date
 
@@ -61,6 +61,13 @@ The National Poll on Healthy Aging dataset was created to gather insights on the
 
 The model was evaluated on a separate test set extracted from the same distribution as the training data.
 
+###  Evaluation results
+
+Accuracy (Cross-validation): 61.42%
+Accuracy (Test Set): 38.46%
+Precision: {Class 1: 0.23, Class 2: 0.49, Class 3: 0.30}
+Recall: {Class 1: 0.18, Class 2: 0.47, Class 3: 0.37}
+F1-Score: {Class 1: 0.20, Class 2: 0.48, Class 3: 0.33}
 
 ### Ethical Considerations
 
