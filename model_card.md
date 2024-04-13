@@ -63,15 +63,19 @@ The model was evaluated on a separate test set extracted from the same distribut
 
 ###  Evaluation results
 
-Accuracy (Train Set): 61.97%
 
-Accuracy (Test Set): 41%
+|   Train Accuracy  |  Test Accuracy  |  
+|:-----------------:|:---------------:|
+|      61.97%       |       41%       | 
 
-Precision: {Class 1: 0.17 Class 2: 0.54, Class 3: 0.35}
+|                   |   Precision     |    Recall    |    F1-Score     |
+|:-----------------:|:---------------:|:------------:|:---------------:|
+|      Class 1      |      0.17       |     0.14     |       0.16      | 
+|:-----------------:|:---------------:|:------------:|:---------------:|
+|      Class 2      |      0.54       |     0.50     |       0.52      | 
+|:-----------------:|:---------------:|:------------:|:---------------:|
+|      Class 3      |      0.16       |     0.52     |       0.39      | 
 
-Recall: {Class 1: 0.14, Class 2: 0.50, Class 3: 0.44}
-
-F1-Score: {Class 1: 0.16, Class 2: 0.52, Class 3: 0.39}
 
 ### Ethical Considerations
 
