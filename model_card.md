@@ -64,9 +64,13 @@ The model was evaluated on a separate test set extracted from the same distribut
 ###  Evaluation results
 
 Accuracy (Cross-validation): 61.42%
+
 Accuracy (Test Set): 38.46%
+
 Precision: {Class 1: 0.23, Class 2: 0.49, Class 3: 0.30}
+
 Recall: {Class 1: 0.18, Class 2: 0.47, Class 3: 0.37}
+
 F1-Score: {Class 1: 0.20, Class 2: 0.48, Class 3: 0.33}
 
 ### Ethical Considerations
