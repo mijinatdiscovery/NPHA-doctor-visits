@@ -5,7 +5,7 @@ Last updated: April 2024
 
 ## Model Details
 
-This model was designed to classify patients into three categories based on the number of doctors they have visited: 0-1 doctors, 2-3 doctors, and 4 or more doctors.
+This model was developed to classify patients into categories reflecting their healthcare needs (e.g., 0-1 doctors, 2-3 doctors, 4 or more doctors) so that we can predidct the number of doctors visits.
 
 ### Model date
 
@@ -63,15 +63,15 @@ The model was evaluated on a separate test set extracted from the same distribut
 
 ###  Evaluation results
 
-Accuracy (Cross-validation): 61.42%
+Accuracy (Train Set): 61.97%
 
-Accuracy (Test Set): 38.46%
+Accuracy (Test Set): 41%
 
-Precision: {Class 1: 0.23, Class 2: 0.49, Class 3: 0.30}
+Precision: {Class 1: 0.17 Class 2: 0.54, Class 3: 0.35}
 
-Recall: {Class 1: 0.18, Class 2: 0.47, Class 3: 0.37}
+Recall: {Class 1: 0.14, Class 2: 0.50, Class 3: 0.44}
 
-F1-Score: {Class 1: 0.20, Class 2: 0.48, Class 3: 0.33}
+F1-Score: {Class 1: 0.16, Class 2: 0.52, Class 3: 0.39}
 
 ### Ethical Considerations
 
