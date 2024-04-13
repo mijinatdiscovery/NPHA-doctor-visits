@@ -1,11 +1,11 @@
-# NPHA Model Card for RandomForest Classifier
+# Model Card
 
 Last updated: April 2024
 
 
 ## Model Details
 
-
+This model was designed for learning purpose to classify patients into three categories based on the number of doctors they have visited: 0-1 doctors, 2-3 doctors, and 4 or more doctors.
 
 ### Model date
 
@@ -23,30 +23,28 @@ RandomForest Classifier
 
 Mijin Cho
 
-### Model Implementation Code: 
+### Model Implementation Code
 
-[github](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/notebooks/NPHA-doctor-visits.ipynb)
+[Jupyter NoteBook](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/notebooks/NPHA-doctor-visits.ipynb)
 
 ### Paper or other resource for more information
 
-[paper](https://www.icpsr.umich.edu/web/NACDA/studies/37305/versions/V1)
+[National Poll on Healthy Aging (NPHA)](https://www.icpsr.umich.edu/web/NACDA/studies/37305/versions/V1)
 
+## Intended Uses:
 
 ### Primary intended uses
 
-This model is intended to classify patients into three categories based on the number of doctors they have visited: 0-1 doctors, 2-3 doctors, and 4 or more doctors.
-
-### Intended Users
-
-Healthcare providers, medical staff planners, and healthcare policy makers.
+The primary intended users of this model is AI practitioners for learning purposes.
 
 
-### Out-of-scope use cases
+### Secondary uses
 
+Here are some secondary use cases we imagine are likely:
+Health and Medicine: Healthcare providers, medical staff planners, and healthcare policy makers.
 
 
 ## Evaluation Data and Metrics
-### Datasets
 
 ### Datasets
 
@@ -59,6 +57,11 @@ We removed all survey respondents with missing responses for any of the chosen f
 
 The National Poll on Healthy Aging dataset was created to gather insights on the health, healthcare, and health policy issues affecting Americans aged 50 and older. By focusing on the perspectives of older adults and their caregivers, the University of Michigan aimed to inform the public, healthcare providers, policymakers, and advocates about the various aspects of aging. This includes topics like health insurance, household composition, sleep issues, dental care, prescription medications, and caregiving, thereby providing a comprehensive understanding of the health-related needs and concerns of the older population.
 
+### Evaluation Data
+
+The model was evaluated on a separate test set extracted from the same distribution as the training data.
+
+
 ### Ethical Considerations
 
 Fairness and Bias: Initial tests indicate potential bias in accurately classifying classes with fewer samples. Further bias auditing and fairness assessments are recommended.
@@ -67,8 +70,6 @@ Privacy: This model was trained on anonymized patient data. Care should be taken
 
 ### Caveats and Recommendations
 
-## Model Performance
+The model currently shows signs of overfitting with significant discrepancies between training and test performance. It should not be used for critical healthcare decisions. It's essential to improve the model's precision and recall across all classes to make it a reliable tool. 
 
-The model currently shows signs of overfitting with significant discrepancies between training and test performance. It should not be used for critical healthcare decisions.
-
-## Improvement Recommendations
+Collecting more data and enhancing feature engineering are crucial steps in improving model performance. More data provides the model with a diverse set of examples, reducing overfitting and improving generalization. Enhanced feature engineering helps in creating better features and incorporating relevant data, leading to improved accuracy and capturing hidden patterns in the data.
