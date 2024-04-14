@@ -63,33 +63,14 @@ The model was evaluated on a separate test set extracted from the same distribut
 
 ###  Evaluation results
 
-Train Accuracy: 61.97%
+                    precision  recall   f1-score   
 
-Test Accuracy: 41%
+             1         0.21      0.18      0.19       
+             2         0.55      0.54      0.54        
+             3         0.35      0.39      0.37        
 
-Class 1:
-
-Precision: 0.22 (Low)
-
-Recall: 0.18 (Low)
-
-F1-Score: 0.20 (Low)
-
-Class 2:
-
-Precision: 0.54 (Moderate)
-
-Recall: 0.51 (Moderate)
-
-F1-Score: 0.52 (Moderate)
-
-Class 3:
-
-Precision: 0.33 (Low)
-
-Recall: 0.39 (Low-Moderate)
-
-F1-Score: 0.36 (Low)
+train accuracy                             0.64     
+ test accuracy                             0.43  
 
 
 ### Ethical Considerations

@@ -5,7 +5,7 @@
 
 The goal of this project is to develop a model using a machine learning algorithm to predict the number of doctor visits for patients aged 50 and older, categorizing these visits into predefined groups {1: 0-1 doctors, 2: 2-3 doctors, 3: 4 or more doctors } based on their physical, mental, and dental health status along with other lifestyle factors.
 
-Our dataset for training includes 714 seniors, encompassing variables such as health status, demographics, and lifestyle factors. Despite achieving a cross-validation accuracy of about 63.9%, the model's performance on unseen data was lower, at 41%, highlighting a need for further enhancements to ensure reliability in practical settings.
+Our dataset for training includes 714 seniors, encompassing variables such as health status, demographics, and lifestyle factors. Despite achieving a cross-validation accuracy of about 64%, the model's performance on unseen data was lower, at 43%, highlighting a need for further enhancements to ensure reliability in practical settings.
 
 An important limitation to address is the imbalance in the 'race' feature within our dataset, coupled with the absence of 'age' as a considered factor, which could significantly impact the model’s predictive accuracy. Collecting more comprehensive data, including a broader demographic spread and additional age-related information, will be crucial in refining the model's effectiveness.
 
@@ -70,30 +70,50 @@ In the precision, recall, and f1 scores, RandomForest generally shows balanced p
 SVC might offer better performance for the specific task but **RandomForest** would be a strong choice on the grounds of interpretability, computational efficiency, and **more balanced class performance**. These factors are crucial in healthcare applications. 
 
 #### Random Forest
-                  precision  recall   f1-score   
+                    precision  recall   f1-score   
 
-           1         0.22      0.18      0.20       
-           2         0.54      0.52      0.52        
-           3         0.33      0.36      0.36        
+             1         0.21      0.18      0.19       
+             2         0.55      0.54      0.54        
+             3         0.35      0.39      0.37        
 
-    Train accuracy                       0.639     
-    Test accuracy                        0.41   
+train accuracy                             0.64     
+ test accuracy                             0.43  
   
 
 #### Support Vector Machine
-                   precision  recall   f1-score   
+                    precision  recall   f1-score   
 
-           1         0.18      0.11      0.13        
-           2         0.51      0.57      0.54        
-           3         0.30      0.32      0.31        
+             1         0.18      0.11      0.13        
+             2         0.51      0.57      0.54        
+             3         0.30      0.32      0.31        
 
-    Train accuracy                       0.616      
-    Test accuracy                        0.41    
+train accuracy                             0.62      
+ test accuracy                             0.41    
+
+#### Model Insights
+The RandomForest model has identified several key predictors that influence the frequency of doctor visits among the elderly. The features deemed most critical, based on their importance scores, are outlined below in their order of impact: `Dental Health`, `Physical Health`, `Mental Health`, `Trouble Sleeping`, `Race`, `Bathroom_Needs_Keeps_Patient_from_Sleeping`, `Gender`, `Employment`, `Unkonwn_Keeps_Patient_from_Sleeping`, `Prescription_Sleep_Medication`.
+
 
 ## Lessons Learned
 
+1. Defining the Problem
 
- 
+Understanding the feasibility of a machine learning solution begins with a clear definition of the problem.  By defining the purpose early on, we should be able to focus our efforts on gathering relevant data and selecting the right targets for a model.
+
+2. Data-Driven Approach
+
+3. Choosing Appropriate ML Techniques 
+
+The selection process by the models' ability to handle a specific type of data and the ease of interpreting their outputs.
+
+4. Oversampling with SMOTE to address issues related to imbalanced data
+Imbalanced data can skew model predictions, leading to poor generalization on underrepresented classes.
+
+5. Hands-On Experience in the ML Process: The end-to-end experience, from data preprocessing to model evaluation, provided hands-on insights into the machine learning lifecycle.
+
+6. Analyzing Model Behavior to Avoid Overfitting
+
+7. Model performance evaluation using various metrics (accuracy, precision, recall, and F1-score) 
 
 
 ## License
