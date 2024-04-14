@@ -13,11 +13,11 @@ An important limitation to address is the imbalance in the 'race' feature within
 This tool aims to support healthcare planners and providers in optimizing the allocation of resources by forecasting healthcare demand variably across different patient groups. The model requires additional development to improve its accuracy and reliability for deployment in real-world healthcare scenarios.
 
 
-## DATA
+## Data
 This model was trained on a subset of [the National Poll on Healthy Aging (NPHA) dataset](https://archive.ics.uci.edu/dataset/936/national+poll+on+healthy+aging+(npha)), consisting of 714 records of seniors who responded to the NPHA survey. The features include 14 attributes related to health and sleep. There is information about race/ethnicity, gender, and age.
 
 
-## MODEL 
+## Model
 We have trained a Random Forest classifier and Support Vector Machine (SVC), DecisionTree. 
 
 Both RandomForest and SVC are capable of managing the high dimensionality inherent in the dataset, which includes a diverse range of variables from healthcare usage to lifestyle factors. 
@@ -28,7 +28,7 @@ Average Accuracy: 60.55% (reported as higher, but confusion matrix suggests lowe
 Reported Accuracy: 41% as the effective accuracy, which reflects the proportion of total correct predictions across all classes.
 
 
-## HYPERPARAMETER OPTIMSATION
+## Hyperparameter Optimization
 We used BayesSearchCV to obtain the best parameters for the RandomFoestClassifier, SVC models.
 Both RandomForest and SVC models demonstrated strong predictive accuracy and robustness.
 
@@ -62,7 +62,7 @@ When tuning hyperparameters for RandomFoestClassifier, there was a significant d
 When tuning hyperparameters for SVC, particularly with the inclusion of the polynomial kernel (poly), computational time increased significantly.
 
 
-## RESULTS
+## Results
 RandomForest, SVC (Support Vector Classifier) has the highest training score. In terms of test accuracy, RandomForest again slightly outperforms the other models but all are fairly close. 
 
 In the precision, recall, and f1 scores, RandomForest generally shows balanced performance across classes but struggles with Class 1. SVC shows slightly better performance for Class 2, which is the majority class, it might be better at identifying more common scenarios.
