@@ -25,7 +25,7 @@ Mijin Cho
 
 ### Model Implementation Code
 
-[Jupyter NoteBook](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/notebooks/NPHA-doctor-visits.ipynb)
+[Jupyter NoteBook](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/notebooks/Model%2BAnalysis.ipynb)
 
 ### Paper or other resource for more information
 
@@ -64,22 +64,32 @@ The model was evaluated on a separate test set extracted from the same distribut
 ###  Evaluation results
 
 Train Accuracy: 61.97%
+
 Test Accuracy: 41%
 
 Class 1:
-Precision: 0.17 (Low)
-Recall: 0.14 (Low)
-F1-Score: 0.16 (Low)
+
+Precision: 0.22 (Low)
+
+Recall: 0.18 (Low)
+
+F1-Score: 0.20 (Low)
 
 Class 2:
+
 Precision: 0.54 (Moderate)
-Recall: 0.50 (Moderate)
+
+Recall: 0.51 (Moderate)
+
 F1-Score: 0.52 (Moderate)
 
 Class 3:
-Precision: 0.35 (Low)
-Recall: 0.44 (High)
-F1-Score: 0.39 (Low-Moderate)
+
+Precision: 0.33 (Low)
+
+Recall: 0.39 (Low-Moderate)
+
+F1-Score: 0.36 (Low)
 
 
 ### Ethical Considerations

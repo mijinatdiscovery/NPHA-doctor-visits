@@ -1,4 +1,4 @@
-# Datasheet Template
+# Datasheet
 
 As far as you can, complete the model datasheet. If you have got the data from the internet, you may not have all the information you need, but make sure you include all the information you do have. 
 
