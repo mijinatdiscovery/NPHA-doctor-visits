@@ -33,29 +33,29 @@ We used BayesSearchCV to obtain the best parameters for the RandomFoestClassifie
 Both RandomForest and SVC models demonstrated strong predictive accuracy and robustness.
 
 
-RandomFoestClassifier Best Hyperparameters
+**RandomFoestClassifier Best Hyperparameters**
 
-- n_estimators: 200
+n_estimators: 200
 
-- max_depth: 15
+max_depth: 15
 
-- min_samples_split: 2
+min_samples_split: 2
 
-- min_samples_leaf: 3
+min_samples_leaf: 3
 
-- bootstrap: False
+bootstrap: False
 
-- n_iter: 100
+n_iter: 100
 
-SVC Best Hyperparameters
+**SVC Best Hyperparameters**
 
-- C: 14.107513230637315
+C: 14.107513230637315
 
-- gamma: 10
+gamma: 10
 
-- kernel: rbf
+kernel: rbf
 
-- n_iter: 100
+n_iter: 100
 
 When tuning hyperparameters for RandomFoestClassifier, there was a significant difference between the training score(0.65) and the test score(0.38). But as the value of the parameter increases, the difference between the train score and the test score decreased.
 
@@ -69,8 +69,33 @@ In the precision, recall, and f1 scores, RandomForest generally shows balanced p
 
 SVC might offer better performance for the specific task but **RandomForest** would be a strong choice on the grounds of interpretability, computational efficiency, and **more balanced class performance**. These factors are crucial in healthcare applications. 
 
+#### Random Forest
+                  precision  recall   f1-score   
+
+           1         0.22      0.18      0.20       
+           2         0.54      0.52      0.52        
+           3         0.33      0.36      0.36        
+
+    Train accuracy                       0.639     
+    Test accuracy                        0.41   
+  
+
+#### Support Vector Machine
+                   precision  recall   f1-score   
+
+           1         0.18      0.11      0.13        
+           2         0.51      0.57      0.54        
+           3         0.30      0.32      0.31        
+
+    Train accuracy                       0.616      
+    Test accuracy                        0.41    
+
+## Lessons Learned
 
 
-## (License)
+ 
+
+
+## License
 This project is licensed under the MIT [License](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/LICENSE) see the LICENSE file for details
 
