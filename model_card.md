@@ -63,15 +63,13 @@ The model was evaluated on a separate test set extracted from the same distribut
 
 ###  Evaluation results
 
-                    precision  recall   f1-score   
+                         precision  recall   f1-score   
 
-             1         0.21      0.18      0.19       
-             2         0.55      0.54      0.54        
-             3         0.35      0.39      0.37        
-
-train accuracy                             0.64     
- test accuracy                             0.43  
-
+                  1         0.21      0.18      0.19       
+                  2         0.55      0.54      0.54        
+                  3         0.35      0.39      0.37        
+     train accuracy                             0.64
+      test accuracy                             0.43
 
 ### Ethical Considerations
 

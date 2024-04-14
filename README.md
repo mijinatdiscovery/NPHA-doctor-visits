@@ -70,25 +70,24 @@ In the precision, recall, and f1 scores, RandomForest generally shows balanced p
 SVC might offer better performance for the specific task but **RandomForest** would be a strong choice on the grounds of interpretability, computational efficiency, and **more balanced class performance**. These factors are crucial in healthcare applications. 
 
 #### Random Forest
-                    precision  recall   f1-score   
+                         precision  recall   f1-score   
 
-             1         0.21      0.18      0.19       
-             2         0.55      0.54      0.54        
-             3         0.35      0.39      0.37        
-
-train accuracy                             0.64     
- test accuracy                             0.43  
+                  1         0.21      0.18      0.19       
+                  2         0.55      0.54      0.54        
+                  3         0.35      0.39      0.37        
+     train accuracy                             0.64
+      test accuracy                             0.43
   
 
 #### Support Vector Machine
-                    precision  recall   f1-score   
+                         precision  recall   f1-score   
 
-             1         0.18      0.11      0.13        
-             2         0.51      0.57      0.54        
-             3         0.30      0.32      0.31        
-
-train accuracy                             0.62      
- test accuracy                             0.41    
+                  1         0.18      0.11      0.13       
+                  2         0.51      0.57      0.54        
+                  3         0.30      0.32      0.51        
+     train accuracy                             0.62
+      test accuracy                             0.41                   
+  
 
 #### Model Insights
 The RandomForest model has identified several key predictors that influence the frequency of doctor visits among the elderly. The features deemed most critical, based on their importance scores, are outlined below in their order of impact: `Dental Health`, `Physical Health`, `Mental Health`, `Trouble Sleeping`, `Race`, `Bathroom_Needs_Keeps_Patient_from_Sleeping`, `Gender`, `Employment`, `Unkonwn_Keeps_Patient_from_Sleeping`, `Prescription_Sleep_Medication`.
