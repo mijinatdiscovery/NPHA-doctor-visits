@@ -5,7 +5,7 @@
 
 The goal of this project is to develop a model using a machine learning algorithm to predict the number of doctor visits for patients aged 50 and older, categorizing these visits into predefined groups {1: 0-1 doctors, 2: 2-3 doctors, 3: 4 or more doctors } based on their physical, mental, and dental health status along with other lifestyle factors.
 
-Our dataset for training includes 714 seniors, encompassing variables such as health status, demographics, and lifestyle factors. Despite achieving a cross-validation accuracy of about 64%, the model's performance on unseen data was lower, at 43%, highlighting a need for further enhancements to ensure reliability in practical settings.
+Our dataset for training includes 714 seniors, with variables such as health status, demographics, and lifestyle factors. Despite achieving a cross-validation accuracy of about 64%, the model's performance on unseen data was lower, at 43%, highlighting a need for further enhancements to ensure reliability in practical settings.
 
 An important limitation to address is the imbalance in the 'race' feature within our dataset, coupled with the absence of 'age' as a considered factor, which could significantly impact the model’s predictive accuracy. Collecting more comprehensive data, including a broader demographic spread and additional age-related information, will be crucial in refining the model's effectiveness.
 
