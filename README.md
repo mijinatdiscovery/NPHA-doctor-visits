@@ -10,7 +10,7 @@ Our dataset for training includes 714 seniors, with variables such as health sta
 An important limitation to address is the imbalance in the 'race' feature within our dataset, coupled with the absence of 'age' as a considered factor, which could significantly impact the model’s predictive accuracy. Collecting more comprehensive data, including a broader demographic spread and additional age-related information, will be crucial in refining the model's effectiveness.
 
 
-This tool aims to support healthcare planners and providers in optimizing the allocation of resources by forecasting healthcare demand variably across different patient groups. The model requires additional development to improve its accuracy and reliability for deployment in real-world healthcare scenarios.
+This tool may help healthcare planners and providers in optimizing the allocation of resources by forecasting healthcare demand variably across different patient groups. The model requires additional development to improve its accuracy and reliability for deployment in real-world healthcare scenarios.
 
 See the [Model Implementation Code](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/notebooks/Model%2BAnalysis.ipynb) for details.
 
@@ -20,7 +20,7 @@ This model was trained on a subset of [the National Poll on Healthy Aging (NPHA)
 See the [Data Sheet](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/data_sheet.md) for details.
 
 ## Model
-We have trained a Random Forest classifier and Support Vector Machine (SVC), DecisionTree. 
+We have trained a Random Forest classifier and Support Vector Machine (SVC), DecisionTree, LogisticRegression. 
 
 Both RandomForest and SVC are capable of managing the high dimensionality inherent in the dataset, which includes a diverse range of variables from healthcare usage to lifestyle factors. 
 
@@ -34,7 +34,7 @@ See the [Model Card](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob
 
 ## Hyperparameter Optimization
 We used BayesSearchCV to obtain the best parameters for the RandomFoestClassifier, SVC models.
-Both RandomForest and SVC models demonstrated strong predictive accuracy and robustness.
+Both RandomForest and SVC models showed better predictive accuracy and robustness than other models (LogisticRegression, DecisionTree) we tested.
 
 
 **RandomFoestClassifier Best Hyperparameters**
@@ -67,7 +67,7 @@ When tuning hyperparameters for SVC, particularly with the inclusion of the poly
 
 
 ## Results
-RandomForest, SVC (Support Vector Classifier) has the highest training score. In terms of test accuracy, RandomForest again slightly outperforms the other models but all are fairly close. 
+RandomForest, SVC has the highest training score. In terms of test accuracy, RandomForest again slightly outperforms the other models but all are fairly close. 
 
 In the precision, recall, and f1 scores, RandomForest generally shows balanced performance across classes but struggles with Class 1. SVC shows slightly better performance for Class 2, which is the majority class, it might be better at identifying more common scenarios.
 
