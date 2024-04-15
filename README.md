@@ -99,17 +99,17 @@ The RandomForest model has identified several key predictors that influence the 
 
 ## Lessons Learned
 
-1. Defining the Problem: Understanding the feasibility of a machine learning solution begins with a clear definition of the problem.  By defining the purpose early on, we should be able to focus our efforts on gathering relevant data and selecting the right targets for a model.
+1. Defining the problem: Understanding the feasibility of a machine learning solution begins with a clear definition of the problem.  By defining the purpose early on, we should be able to focus our efforts on gathering relevant data and selecting the right targets for a model.
 
-2. Data-Driven Approach
+2. Data-driven approach
 
-3. Choosing Appropriate ML Techniques: The selection process by the models' ability to handle a specific type of data and the ease of interpreting their outputs.
+3. Choosing appropriate ML techniques: The selection process by the models' ability to handle a specific type of data and the ease of interpreting their outputs.
 
 4. Oversampling with SMOTE to address issues related to imbalanced data: Imbalanced data can skew model predictions, leading to poor generalization on underrepresented classes.
 
-5. Hands-On Experience in the ML Process: The end-to-end experience, from data preprocessing to model evaluation, provided hands-on insights into the machine learning lifecycle.
+5. Hands-on experience in the ML process: The end-to-end experience, from data preprocessing to model evaluation, provided hands-on insights into the machine learning lifecycle.
 
-6. Analyzing Model Behavior to Avoid Overfitting
+6. Analyzing model behaviour to avoid overfitting
 
 7. Model performance evaluation using various metrics (accuracy, precision, recall, and F1-score) 
 
