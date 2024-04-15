@@ -26,7 +26,7 @@ Both RandomForest and SVC are capable of managing the high dimensionality inhere
 
 In initial tests, the Random Forest model performed better compared to the other models.
 
-Average Accuracy: 60.55% (reported as higher, but confusion matrix suggests lower effective accuracy)
+Average Accuracy: 60.4% (reported as higher, but confusion matrix suggests lower effective accuracy)
 Reported Accuracy: 41% as the effective accuracy, which reflects the proportion of total correct predictions across all classes.
 
 See the [Model Card](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/model_card.md) for details.
