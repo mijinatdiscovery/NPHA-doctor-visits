@@ -39,7 +39,7 @@ Both RandomForest and SVC models showed better predictive accuracy and robustnes
 
 **RandomFoestClassifier Best Hyperparameters**
 
-n_estimators: 77
+n_estimators: 120
 
 max_depth: 15
 
