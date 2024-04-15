@@ -39,7 +39,7 @@ Both RandomForest and SVC models showed better predictive accuracy and robustnes
 
 **RandomFoestClassifier Best Hyperparameters**
 
-n_estimators: 200
+n_estimators: 77
 
 max_depth: 15
 
@@ -67,7 +67,7 @@ When tuning hyperparameters for SVC, particularly with the inclusion of the poly
 
 
 ## Results
-RandomForest, SVC has the highest training score. In terms of test accuracy, RandomForest again slightly outperforms the other models but all are fairly close. 
+RandomForest, SVC has the highest training score. In terms of test accuracy, all are fairly the same.
 
 In the precision, recall, and f1 scores, RandomForest generally shows balanced performance across classes but struggles with Class 1. SVC shows slightly better performance for Class 2, which is the majority class, it might be better at identifying more common scenarios.
 
@@ -77,7 +77,7 @@ SVC might offer better performance for the specific task but **RandomForest** wo
                          precision  recall   f1-score   
 
                   1         0.22      0.18      0.20       
-                  2         0.52      0.50      0.51        
+                  2         0.53      0.51      0.52        
                   3         0.33      0.39      0.36        
      train accuracy                             0.64
       test accuracy                             0.41
