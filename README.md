@@ -96,7 +96,7 @@ SVC might offer better performance for the specific task but **RandomForest** wo
 #### Model Insights
 The RandomForest model has identified several key predictors that influence the frequency of doctor visits among the elderly. The features deemed most critical, based on their importance scores, are outlined below in their order of impact: 
 
-![Screenshot](screenshots/rf_featrue_importance.png)
+![rf_feature_importance](screenshots/rf_feature_importance.png)
 
 
 ## Lessons Learned
