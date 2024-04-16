@@ -10,7 +10,7 @@ Our dataset for training includes 714 seniors, with variables such as health sta
 An important limitation to address is the imbalance in the 'race' feature within our dataset, coupled with the absence of 'age' as a considered factor, which could significantly impact the model’s predictive accuracy. Collecting more comprehensive data, including a broader demographic spread and additional age-related information, will be crucial in refining the model's effectiveness.
 
 
-This tool may help healthcare planners and providers in optimizing the allocation of resources by forecasting healthcare demand variably across different patient groups. The model requires additional development to improve its accuracy and reliability for deployment in real-world healthcare scenarios.
+This may help healthcare planners and providers in optimizing the allocation of resources by forecasting healthcare demand variably across different patient groups. The model requires additional development to improve its accuracy and reliability for deployment in real-world healthcare scenarios.
 
 See the [Model Implementation Code](https://github.com/mijinatdiscovery/NPHA-doctor-visits/blob/main/notebooks/Model%2BAnalysis.ipynb) for details.
 
@@ -61,7 +61,7 @@ kernel: rbf
 
 n_iter: 100
 
-When tuning hyperparameters for RandomFoestClassifier, there was a significant difference between the training score(0.65) and the test score(0.38). But as the value of the parameter increases, the difference between the train score and the test score decreased.
+When tuning hyperparameters for RandomFoestClassifier, there was a significant difference between the training score(0.65) and the test score(0.38). But as the value of the min_samples_split, min_samples_leaf parameters increases, the difference between the train score and the test score decreased.
 
 When tuning hyperparameters for SVC, particularly with the inclusion of the polynomial kernel (poly), computational time increased significantly.
 
@@ -94,7 +94,9 @@ SVC might offer better performance for the specific task but **RandomForest** wo
   
 
 #### Model Insights
-The RandomForest model has identified several key predictors that influence the frequency of doctor visits among the elderly. The features deemed most critical, based on their importance scores, are outlined below in their order of impact: `Dental Health`, `Physical Health`, `Mental Health`, `Trouble Sleeping`, `Race`, `Bathroom_Needs_Keeps_Patientfrom_Sleeping`, `Gender`, `Employment`, `Unkonwn_Keeps_Patient_from_Sleeping`, `Prescription_Sleep_Medication`.
+The RandomForest model has identified several key predictors that influence the frequency of doctor visits among the elderly. The features deemed most critical, based on their importance scores, are outlined below in their order of impact: 
+
+![Screenshot](screenshots/rf_featrue_importance.png)
 
 
 ## Lessons Learned
